@@ -31,17 +31,20 @@ html {
 /*-------------------------------------------*/
 .container-header {
 	background-color: rgb(238,238,238);
+	display: flex;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	overflow: hidden;
 }
 
 .container-header-wrapper {
-	position: fixed;
-  top: 0;
-  min-height: 75px;
-  padding: 0px 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: #eee;
+	display: flex;
+	height: 75px;
+	
+	justify-content: center;
+	align-items: center;
+	padding: 0 20px;
 	
 }
 
@@ -50,20 +53,18 @@ html {
 /*-------------------------------------------*/
 
 .logo {
+	display: flex;
+	align-items: center;
 	width: 60vw;
-	background-color: blue;
+	justify-content: flex-start;
+	
+	padding-left: 20px;
 }
 
 img {
 	width: 100%;
-  height: 100%;
-  max-width: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-left: 20px;
-
+	height: 100%;
+	max-width: 300px;
 }
 
 /*-------------------------------------------*/
@@ -73,17 +74,14 @@ nav {
 	
 }
 nav ul {
+	display: flex;
 	width: 35vw;
-  	display: flex;
-  	flex-direction: row;
-  	justify-content: space-around;
-  	background-color: orange;
+	justify-content: space-around;
+	align-items: center;
 }
 
 nav ul li {
-	font-size: 1.6rem;
-	display: inline-block;
-	margin-left: auto;
+	font-size: 1.6em;
 }
 
 nav ul li a {
@@ -94,13 +92,58 @@ nav a:hover {
 
 }
 
+/*-------------------------------------------*/
+/* MAIN BODY */
+/*-------------------------------------------*/
 
+main {
+	background-color: rgb(238,238,238);
+	margin-top: 7.545em;
 
+}
 
+.container-top {
+	max-width: 1000px;
+	margin: 0 auto;
+}
 
+.container-top h2 {
+	font-size: 2.4rem;
+	text-align: center;
+}
 
+.container-top form {
+	text-align: center;
+}
 
+.container-top form input {
+	font-size: 1.3rem;
+	padding-left: 0.40em;
+	margin-top: 1.25em;
+	background-color: white;
+	width: 270px;
+	height: 29px;
+	border: 0.25px solid gray;
+	border-width: thin;
+	border-radius: 2px;
+}
 
+.container-top form button {
+	font-size: 1.6rem;
+	font-weight: 800;
+	background-color: rgb(241,197,13);
+	margin-top: 0.75em;
+	margin-bottom: 0.75em;
+	padding: 0.4em 1.1em;
+}
+
+/*-------------------------------------------*/
+/* MAIN BODY FEATURES */
+/*-------------------------------------------*/
+
+.fa-truck {
+	color: rgb(255,140,0);
+}
 
 
 
