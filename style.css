@@ -102,9 +102,10 @@ main {
 
 }
 
-.container-top {
+.container {
 	max-width: 1000px;
 	margin: 0 auto;
+	background-color: green;
 }
 
 .container-top h2 {
@@ -141,13 +142,31 @@ main {
 /* MAIN BODY FEATURES */
 /*-------------------------------------------*/
 
-.fa-truck {
+.fa {
 	color: rgb(255,140,0);
 }
 
+.container-middle {
+	display: flex;
+	flex-direction: column;
+	background-color: orange;
+	margin-top: 8em;
+	align-items: center;
+}
 
+.feature-1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
 
+.feature-2 {
+	display: flex;
+}
 
+.feature-3 {
+	display: flex;
+}
 
 
 
